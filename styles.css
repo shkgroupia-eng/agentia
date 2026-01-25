@@ -777,3 +777,48 @@ body {
         font-size: 16px;
     }
 }
+
+/* ===================================
+   CORREÇÃO BOTÕES MOBILE
+   Tamanho padrão - não gigante
+=================================== */
+
+@media (max-width: 768px) {
+    .btn {
+        width: auto !important;
+        min-width: 220px;
+        padding: 16px 28px !important;
+        font-size: 16px !important;
+        display: inline-block !important;
+        margin: 0 8px 8px 0 !important;
+        flex: none !important;
+    }
+    
+    .btn-primary {
+        padding: 16px 28px !important;
+        font-size: 16px !important;
+    }
+    
+    .btn-large {
+        padding: 16px 32px !important;
+        font-size: 16px !important;
+        min-width: 240px;
+    }
+    
+    .hero-left {
+        gap: 16px !important;
+    }
+    
+    .header-content {
+        flex-direction: row !important;
+        gap: 12px !important;
+        align-items: center !important;
+    }
+    
+    .header-content .btn {
+        padding: 12px 24px !important;
+        font-size: 14px !important;
+        min-width: auto !important;
+        white-space: nowrap;
+    }
+}
